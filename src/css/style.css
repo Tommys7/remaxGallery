@@ -1,0 +1,246 @@
+@font-face {
+  font-family: "Barlow Regular";
+  src: url("../fonts/Barlow-Regular.eot");
+  src: url("../fonts/Barlow-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Barlow-Regular.woff") format("woff"), url("../fonts/Barlow-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Barlow Bold";
+  src: url("../fonts/Barlow-SemiBold.eot");
+  src: url("../fonts/Barlow-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Barlow-SemiBold.woff") format("woff"), url("../fonts/Barlow-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Regular", sans-serif;
+  font-weight: 300;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1780px;
+  margin: auto;
+  width: 96%;
+}
+
+.container-tight {
+  max-width: 1400px;
+  width: 96%;
+  margin: auto;
+}
+
+button {
+  background-color: #ffbd17;
+  border: none;
+  font-family: "Barlow Bold", sans-serif;
+  font-weight: 700;
+  padding: 20px 40px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  transition: 0.3s;
+  background-color: #e3a200;
+}
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  width: 100%;
+  z-index: 999999;
+  transition: 0.5s;
+}
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.header-logo {
+  display: flex;
+}
+.header-logo__img {
+  margin-right: 20px;
+}
+.header-logo__img img {
+  width: 100px;
+}
+.header-logo__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header-links {
+  display: flex;
+  align-items: center;
+}
+.header-link {
+  text-decoration: none;
+  color: #000;
+  font-family: "Barlow Bold", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 25px;
+  position: relative;
+  display: flex;
+  cursor: pointer;
+}
+.header-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  top: -5px;
+  transition: 0.5s;
+}
+.header-link:hover {
+  color: #FBBF24;
+}
+.header-link:hover::after {
+  background-color: #FBBF24;
+  width: 100%;
+}
+
+.header-selected {
+  text-decoration: none;
+  font-family: "Barlow Bold", sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  margin-left: 25px;
+  position: relative;
+}
+.header-selected::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: -5px;
+  transition: 0.5s;
+  background-color: #FBBF24;
+  left: 0;
+}
+
+.header-bg {
+  background: url(../img/header-photo.jpg);
+  position: absolute;
+}
+
+.logo-name__reg {
+  display: block;
+  font-size: 26px;
+}
+
+.logo-name__bold {
+  font-family: "Barlow Bold", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.shrink {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.gallery-text {
+  margin-left: 200px;
+}
+
+.gallery-topText {
+  font-size: 25px;
+  color: #ffbd17;
+  font-family: "Barlow Bold", sans-serif;
+  font-weight: 700;
+  margin-top: 100px;
+}
+
+.gallery-bottomText {
+  font-size: 50px;
+  margin: 0;
+  margin-bottom: 160px;
+  margin-top: 30px;
+}
+
+.gallery-wrap img {
+  padding: 15px;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-title {
+  font-size: 70px;
+  font-family: "Barlow Bold", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.footer-exclusive {
+  font-size: 25px;
+  font-family: "Barlow Bold", sans-serif;
+  font-weight: 700;
+  color: #ffbd17;
+  margin-bottom: 40px;
+}
+
+.footer-logo {
+  width: 40%;
+  margin-bottom: 30px;
+}
+
+.footer-sellerName {
+  margin: 0;
+  margin-bottom: 8px;
+  color: #6b6b6b;
+}
+
+.footer {
+  padding-top: 150px;
+  margin-bottom: 100px;
+}
+.footer a {
+  text-decoration: none;
+  color: #6b6b6b;
+  display: block;
+  margin-bottom: 8px;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-form {
+  width: 40%;
+}
+
+.footer-form__title {
+  font-size: 55px;
+  color: #ffbd17;
+  margin: 0;
+  margin-bottom: 65px;
+}
+
+.footer-input {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  color: #ffbd17;
+  padding: 5px 5px 7px 5px;
+  border: none;
+  position: relative;
+  border: 1px solid #ffbd17;
+  border-radius: 4px;
+}
+
+.footer-form__button {
+  color: #fff;
+  padding: 20px 50px;
+}/*# sourceMappingURL=style.css.map */
